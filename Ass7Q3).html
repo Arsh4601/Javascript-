@@ -1,0 +1,46 @@
+<html>
+      
+   <head>
+       <title> Q1) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 7 (Q3) </h1>
+        
+        <h3> Displaying current time </h3>
+
+        <div id="time">  </div>
+
+
+        <script type="text/javascript">
+
+            function clock()
+            {
+
+                var d=new Date()
+
+                time1=d.toLocaleTimeString()
+
+                ctime=document.getElementById("time")
+                
+                ctime.innerText=time1
+
+
+
+            }
+
+            //clock()
+            setInterval(clock, 100);            
+            document.write("<br>")
+            
+            
+
+
+            name=prompt("Enter your name: ");
+            document.write("<br>Welcome "+name);
+
+        </script>
+    </body>
+</html>
