@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Q3) </title>
+    </head>
+
+    <body>
+
+        <h1> Assignment 4 (Q2) </h1>
+        
+        <h3> Accepting Os and version and displaying it seperately </h3>
+
+        <script type="text/javascript">
+
+          
+          var os=" "
+          var version=" "
+
+          let str=prompt("Enter your Os name and version")
+
+          str=str.trim()
+                    
+          for(var i=0;i<str.length;i++)
+          {
+              
+            chk=parseInt(str[i])
+            
+            
+            if(isNaN(chk)==true)
+            {
+                if(isNaN(parseFloat(str[i]))==false)
+                {
+                    version= version+str[i] 
+                }
+
+                else
+                {
+                    os= os+str[i]
+
+                }
+                
+
+               
+
+            }
+
+            
+            else
+            {
+
+                toString(str[i])
+                version= version+str[i]
+                
+            }
+              
+          }
+
+          document.write("OS: "+os+"<br>")
+          document.write("Version: "+version+"<br>")
+          
+
+          
+                    
+
+        
+        </script>
+
+        
+
+
+    </body>
+
+
+
+</html>

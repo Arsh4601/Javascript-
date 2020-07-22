@@ -1,0 +1,104 @@
+<html>
+
+    <head>
+
+        <title> Q2) </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+         marks=prompt("Enter your marks: ")
+
+         document.write("1. Using if-else<br><br>")
+
+         if(marks>=80 && marks< 100)
+         {
+             document.write("Marks are "+marks+" and Your grade is A")
+         }
+
+         else if(marks>=65 && marks< 79)
+         {
+             document.write("Marks are "+marks+" and Your grade is B")
+         }
+
+         else if(marks>=45 && marks< 64)
+         {
+             document.write("Marks are "+marks+" and Your grade is C")
+         }
+
+
+         else
+         {
+             document.write("Marks are "+marks+" and Your grade is D")
+         }
+
+         
+         document.write("<br><br>2. Using Switch case<br><br>")
+
+         switch(true)
+         {
+             case (marks>=80 && marks<100):
+
+                  document.write("Marks are "+marks+" and Your grade is A")
+                   break
+            
+                case (marks>=65 && marks<79):
+
+                    document.write("Marks are "+marks+" and Your grade is B")
+                    break
+            
+                case (marks>=45 && marks<64):
+
+                    document.write("Marks are "+marks+" and Your grade is C")
+                    break
+
+                case (marks>=0 && marks<44):
+
+                   document.write("Marks are "+marks+" and Your grade is D")
+                   break
+                
+                default:
+
+                    document.write("Invalid Entry")
+             
+         }
+
+         document.write("<br><br>3. Using Tertiary operator<br><br>")
+
+          let result=(marks>=80 && marks<100)? document.write("Marks are "+marks+" and Your grade is A")
+           :(marks>=65 && marks<79)?document.write("Marks are "+marks+" and Your grade is B")
+           :(marks>=45 && marks<64)?document.write("Marks are "+marks+ "and Your grade is C")
+           :(marks>=0 && marks<44) ?document.write("Marks are "+marks+" and Your grade is D"):document.write("Invalid Entry")
+
+           
+
+ 
+ 
+ 
+            
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+         
+
+
+          
+        
+        </script>
+    
+    </body>
+</html>
