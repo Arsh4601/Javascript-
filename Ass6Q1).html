@@ -1,0 +1,64 @@
+<html>
+      
+   <head>
+       <title> Q1) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 6 (Q1) </h1>
+        
+        <h3> Higher order functions </h3>
+
+
+        <script type="text/javascript">
+
+            num=[]
+
+            
+
+            while(true)
+            {
+                num_item=prompt("Enter positive number: ")
+
+                if(num_item>0)
+                {
+                    num.push(num_item)
+                    ans=prompt("Do you want to enter another number(y/n): ")
+
+                    if(ans=="n" || ans=="N")
+                    {
+                        break
+                    } 
+                    
+                    
+                }
+
+                else
+                {
+                    alert("Input is not a positive number")
+                }
+            }
+
+            let odd=num.filter(item=>item%2!=0)
+
+            document.write("\n All odd numbers: "+odd)
+
+            let odd_cube=odd.map(item=>item**3)
+
+            document.write("\n Cube of all odd numbers: "+odd_cube)
+
+
+                
+            
+      
+            
+      
+      
+      
+      
+      
+        </script>
+    </body>
+</html>

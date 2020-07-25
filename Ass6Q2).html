@@ -1,0 +1,118 @@
+<html>
+      
+   <head>
+       <title> Q2) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 6 (Q2) </h1>
+        
+        <h3> OOPS </h3>
+
+
+        <script type="text/javascript">
+
+            class user
+            {
+               
+               constructor(name,age,id)
+               {
+                   this.name=name
+                   this.agee=age
+                   this.id=id
+
+               }
+
+               login()
+               {
+                   document.write("<br>"+this.name+" has logged in")
+               }
+
+               logout()
+               {
+
+                   document.write("<br>"+this.name+" has logged out")
+               }
+
+
+            } 
+
+            class moderator extends user
+            {
+
+                constructor(name,age,email)
+                {
+                    super(name,age,email);
+
+                    this.coin=0
+                }
+                
+                coins_add()
+                {
+
+                    this.coin=this.coin+25
+
+                    document.write("<br>Adding 25 coins to your account ")
+
+                    document.write("<br>Coins: "+this.coin)
+
+                }
+
+                coins_sub()
+                {
+
+                    this.coin=this.coin-5
+                    
+                    document.write("<br>Deducting 5 coins from your account ")
+
+                    document.write("<br>Coins: "+this.coin)
+
+
+                }
+
+
+            }
+
+            class admin extends moderator
+            {
+
+                
+                add_course(user,course)
+                {
+                    document.write("<br>"+user+" , "+course +" course is added")
+                }
+
+
+            }
+
+            let user1=new user("Arsh",19,"arsh.ansaari@gmail.com")
+            let user1_coins=new moderator("Arsh",19,"arsh.ansaari@gmail.com")
+            let user1_course=new admin("Arsh",19,"arsh.ansaari@gmail.com")
+
+    
+            
+            user1.login();
+
+            document.write("<br>") 
+
+            user1_coins.coins_add();
+
+            document.write("<br>")
+
+            user1_coins.coins_sub();
+
+            document.write("<br>")
+
+            user1_course.add_course(user1.name,"Python");
+
+            document.write("<br>")
+            
+            user1.logout();
+
+
+
+        </script>
+    </body>
+</html>
