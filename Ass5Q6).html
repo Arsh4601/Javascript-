@@ -1,0 +1,133 @@
+<html>
+      
+   <head>
+       <title> Q6) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 5 Q6) </h1>
+        
+        <h3> Number greater than 100 </h3>
+
+        <script type="text/javascript">
+
+            alert("Code in general")
+            document.write("<br>Code in general <br><br>")
+
+            while(true)
+            {
+                var num=prompt("Enter a number greater than 100")
+
+                if(isNaN(Number(num))==false)
+                {
+                    if(num>100)
+                    {
+                        console.log("Number: "+num)
+                        document.write("Number accepted")
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Invalid entry(number<=100)")
+                    }
+                }
+
+                else
+                {
+                    if(num==" ")
+                    {
+                        document.write("No input")
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Invalid entry(string value)")
+                    } 
+                }           
+
+            }
+
+            alert("Code using '?'")
+
+            document.write("<br><br> Code using '?' <br><br>")
+
+           // num=prompt("Enter a number greater than 100")
+
+            //res= num>100 ? a=0:num==" "? a=0:alert("Invalid entry"); 
+
+            
+            var a;
+            while(true)
+            {
+                num=prompt("Enter a number greater than 100")
+
+                num>100 ? a=0:num==" "? a=0: a=1
+
+                if(a==0)
+                {
+                    if(num!=" " && a==0)
+                    {
+                        document.write("Number accepted")
+                        console.log("Number: "+num)
+                        break
+                    }
+
+                    else
+                    {
+                        document.write("No input")
+                        break
+                    }    
+                }
+
+                else
+                {
+                    alert("Invalid Entry")
+                }
+
+
+            }
+
+            document.write("<br><br> Code using '||' <br><br>")
+
+            while(true)
+            {
+
+                num=prompt("Enter a number greater than 100")
+
+                if(isNaN(Number(num))==false || num==" ")
+                {
+                    if(num==" ")
+                    {
+                        document.write("No input")
+                        break
+                    }
+
+                    else if(num>100)
+                    {
+                        document.write("Number accepted")
+                        console.log("Number: "+num)
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Invalid Entry(number<=100)")
+
+                    }
+                }
+
+                else
+                {
+                    alert("Invalid Entry(string input)")
+                }
+
+
+            }            
+
+        </script>
+    </body>
+</html>

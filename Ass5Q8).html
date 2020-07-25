@@ -1,0 +1,39 @@
+<html>
+      
+   <head>
+       <title> Q8) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 3 Q1) </h1>
+        
+        <h3> Arrow functions </h3>
+
+
+        <script type="text/javascript">
+
+            q1="Do you want to continue the execution?"
+
+            function ask(question,yes=()=>{document.write("You agreed")},
+            no=()=>{document.write("You cancelled the execution")})
+            {
+                if(confirm(question))
+                {
+                    yes()
+                }
+
+                else
+                {
+                    no()
+                }
+            }
+
+            ask(q1)
+
+            
+
+        </script>
+    </body>
+</html>

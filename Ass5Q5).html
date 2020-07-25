@@ -1,0 +1,67 @@
+<html>
+      
+   <head>
+       <title> Q5) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 5 Q5) </h1>
+        
+        <h3> Sales commission </h3>
+
+
+        <script type="text/javascript">              
+
+            while (true)
+            {
+
+                var sales=prompt("Enter sales made by you: ")            
+
+                if(isNaN(Number(sales))==false)
+                {
+                    if(sales<=5000)
+                    {
+                        console.log("You made sales of: "+sales)
+                        console.log("Your commision is 2%")
+                    }
+                    
+                    else if(sales>5000 && sales<=10000)
+                    {
+                        console.log("You made sales of: "+sales)
+                        console.log("Your commision is 5%")
+                    }
+
+                    else if(sales>10000 && sales<=20000)
+                    {
+                        console.log("You made sales of: "+sales)
+                        console.log("Your commision is 7%")
+                    }
+
+                    else
+                    {
+                        console.log("You made sales of: "+sales)
+                        console.log("Your commision is 10%")
+                    }
+
+                    break
+                    
+
+                }
+
+                else
+                {
+                    alert("Wrong input,please try again")
+
+                    
+                }
+
+            }
+            
+
+
+
+        </script>
+    </body>
+</html>

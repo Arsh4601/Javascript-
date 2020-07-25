@@ -1,0 +1,144 @@
+<html>
+      
+   <head>
+       <title> Q4) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 5 (Q4) </h1>
+        
+        <h3> Calculator </h3>
+
+
+        <script type="text/javascript">       
+            
+
+            alert("Enter 1 for addition, 2 for subtraction,  3 for multiplication , 4 for division , 5 to calculate square root , 6 to calculate modulus")                       
+            
+            while (true)
+            {
+                var choice;
+                choice=Number(prompt("Your choice: "))
+
+                if(isNaN(Number(choice))==false)
+                {
+                    if(choice>=1 && choice<=6)
+                    {
+                        if(choice==1||choice==2||choice==3||choice==4||choice==5||choice==6)
+                        {
+                            break
+
+                        }
+
+                        else
+                        {
+                            alert("ERROR(wrong choice), please renter")
+                        }
+                        
+                        
+                    }
+
+                    else
+                    {
+                        alert("ERROR(wrong choice), please renter")
+                        
+                    }
+                }               
+
+                else
+                {
+                    alert("ERROR(string), please renter")
+                    
+                    
+                }
+            }
+
+            var num1;
+            var num2;
+
+          
+            if(choice==1)
+            {
+
+                num1=Number(prompt("Enter number 1"))
+                num2=Number(prompt("Enter number 2"))
+                var add=num1+num2
+                document.write("Result:"+add)
+            }  
+
+            else if(choice==2)
+            {
+
+                num1=Number(prompt("Enter number 1"))
+                num2=Number(prompt("Enter number 2"))
+                var sub=num1-num2
+                document.write("Result:"+sub)
+            } 
+
+
+            else if(choice==3)
+            {
+
+                num1=Number(prompt("Enter number 1"))
+                num2=Number(prompt("Enter number 2"))
+                var multi=num1*num2
+                document.write("Result:"+multi)
+            }                       
+
+
+            else if(choice==4)
+            {
+
+                num1=Number(prompt("Enter number 1"))
+                num2=Number(prompt("Enter number 2"))
+                var div=num1/num2
+                document.write("Result:"+div)
+            }      
+
+
+            else if(choice==5)
+            {
+
+                num1=Number(prompt("Enter number "))
+                
+                var sq_root=Math.sqrt(num1)
+                document.write("Result:"+sq_root)
+            }         
+
+
+            else if(choice==6)
+            {
+
+                num1=Number(prompt("Enter number 1"))
+                num2=Number(prompt("Enter number 2"))
+                var mod=num1%num2
+                document.write("Result:"+mod)
+            }
+
+            else
+            {
+                alert("ERROR(wrong choice), please renter")
+
+            }            
+                
+                
+                
+                
+                
+                
+            
+
+            
+
+            
+
+           
+            
+            
+            
+
+        </script>
+    </body>
+</html>

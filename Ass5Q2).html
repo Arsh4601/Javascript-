@@ -1,0 +1,41 @@
+<html>
+      
+   <head>
+       <title> Q2) </title>
+
+    </head>
+
+    <body>
+
+        <h1> Assignment 5 (Q2) </h1>
+        
+        <h3> Distruction of an object </h3>
+
+
+        <script type="text/javascript">
+
+            
+            const student=
+            {
+                name:"Helenski",
+                age:24,
+                projects:
+                {
+                    diceGame:"Two player dice game using JavaScript"
+                }
+
+
+            }
+
+            document.write("Destructing properties and methods of student <br> <br>")
+
+            const{name,age,projects:{diceGame}}=student
+
+            document.write(name+"<br> "+age+"<br> "+diceGame)
+
+
+
+
+        </script>
+    </body>
+</html>
