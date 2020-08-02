@@ -1,0 +1,166 @@
+<html>
+      
+   <head>
+       <title> Js </title>
+
+    </head>
+
+    <body>
+
+        <h1> Mini Project </h1>    
+
+        <h2> To do list </h2> <br>
+
+
+        <form id="form1">
+
+            <button type="button" id="add" onclick="add_child()"> Add an element </button> <br> <br>
+
+            <button type="button" id="delete_last" onclick="delete_last_child()"> Delete last element </button> <br><br>
+
+            <button type="button" id="delete" onclick="delete_child()"> Delete element </button> <br><br>
+
+            <button type="button" id="edit" onclick="edit_child()"> edit list </button> <br><br>
+            
+            
+        </form>
+
+        <ol id="list">
+        
+        </ol>           
+
+
+        <script type="text/javascript">           
+
+            var ctr=0
+
+            function add_child()
+            {
+                
+
+                item=prompt("Enter item")                
+
+                var li=document.createElement("li")
+
+                list=document.querySelector("#list")
+
+                var a=document.createElement("div")
+
+                list.appendChild(li)
+
+                li.appendChild(a)               
+
+                a.innerHTML=item 
+
+                ctr++           
+            }
+
+            
+
+            function delete_last_child()
+            {
+                
+                list=document.querySelector("#list")
+
+                var a=document.createElement("div")
+
+                var li=document.createElement("li")  
+
+                list.removeChild(list.childNodes[ctr])                
+
+                ctr-- 
+            }
+
+            function delete_child()
+            {
+                temp=[]
+
+                while (true)
+                {
+                    item=prompt("Enter item number you want to delete")
+
+                    if(item<=ctr)
+                    {
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Item does not exist")
+                    }
+
+                }               
+
+                list=document.querySelector("#list")
+
+                var a=document.createElement("div")
+
+                var li=document.createElement("li")
+
+                for (i=1;i<=ctr;i++)
+                {
+                    
+                    temp.push(list.childNodes[i].childNodes[0].innerHTML)                    
+                }
+
+                item_caught=temp.filter(el=>el==temp[item-1])                 
+
+                list.removeChild(list.childNodes[item]) 
+
+                ctr--               
+            }
+
+            function edit_child()
+            {
+
+                while (true)
+                {
+                    arg_item=prompt("Enter item number which you want to move")
+
+                    if(arg_item<=ctr)
+                    {
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Item does not exist")
+                    }
+
+                }
+
+
+                while (true)
+                {
+                    target_item=prompt("Enter item number before which you want to place the item")
+
+                    if(target_item<=ctr)
+                    {
+                        break
+                    }
+
+                    else
+                    {
+                        alert("Item does not exist")
+                    }
+
+                } 
+
+                list=document.querySelector("#list")
+
+                var a=document.createElement("div")
+
+                var li=document.createElement("li") 
+
+                list.insertBefore(list.childNodes[arg_item],list.childNodes[target_item])
+
+                ctr=ctr
+            }
+
+
+
+        </script>
+
+    </body>
+
+</html>
